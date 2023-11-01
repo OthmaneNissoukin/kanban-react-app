@@ -1,0 +1,146 @@
+:root {
+    --color-dark-primary: #1B262C;
+    --color-dark-secondary: #04364A;
+    --color-title-primary: #0acce1;
+    --color-title-secondary: #04364A;
+}
+
+section.tasks-section {
+    width: 100%;
+    padding: 16px 24px;
+    overflow-x: scroll;
+}
+
+section.tasks-section.light {
+    background-color: #fff;
+}
+
+section.tasks-section.dark {
+    background-color: var(--color-dark-primary);
+}
+
+section.tasks-section h2 {
+    color: var(--color-title-primary);
+    margin-bottom: 16px;
+}
+
+section.tasks-section div.tasks {
+    display: grid;
+    grid-template-columns: repeat(4, 252px);
+    gap: 20px;
+}
+
+
+section.tasks-section div.tasks div:first-of-type h3 {
+    border-color: blue
+}
+section.tasks-section div.tasks div:nth-of-type(2) h3 {
+    border-color: red
+}
+section.tasks-section div.tasks div:nth-of-type(3) h3 {
+    border-color: yellow
+}
+section.tasks-section div.tasks div:last-of-type h3 {
+    border-color: green
+}
+
+section.tasks-section div h3 {
+    text-align: center;
+    padding: 8px;
+    background-color: var(--color-dark-secondary);
+    border-top: 5px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+section.tasks-section div button.new-task {
+    padding: 4px 16px;
+    font-size: 18px;
+    /* width: 100%; */
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    background-color: #00b7c2;
+    color: var(--color-dark-secondary);
+    border: none;
+    border-radius: 4px;
+}
+
+section.tasks-section div.tasks div article {
+    padding: 8px 12px;
+    margin: 6px 0px;
+}
+
+section.tasks-section.dark div.tasks div article {
+    background-color: #040d1273;
+    color: #fff;
+    cursor: grab;
+    transition: 250ms all linear;
+}
+
+section.tasks-section.light div.tasks div article {
+    background-color: #F5F7F8;
+    color: #000;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 15px #d1d1d1;
+    border-radius: 4px;
+}
+
+section.tasks-section div.tasks div article:active {
+    cursor:grabbing;
+    transform: rotateZ(20deg);
+    box-shadow: none;
+}
+
+section.tasks-section div.tasks div article aside {
+    /* TODO: Align to right with pointer effect */
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+section.tasks-section div.tasks div article h4 {
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: 3px solid var(--color-dark-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.tasks-section div.tasks div article h4 span {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+
+section.tasks-section div.tasks div article p {
+    white-space: pre-line;
+}
+
+
+
+section.tasks-section div.tasks div article button {
+    font-size: 22px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+section.tasks-section div.tasks div article button:first-of-type {
+    color: blue
+}
+section.tasks-section div.tasks div article button:nth-of-type(2) {
+    color: red
+}
+/* section.tasks-section div.tasks div article button:last-of-type {
+    color: yellow;
+} */

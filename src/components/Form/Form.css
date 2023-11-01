@@ -1,0 +1,59 @@
+form.project-form {
+    width: 50%;
+    padding: 16px 24px;
+    margin: 0px auto;
+}
+
+form.project-form div {
+    margin-bottom: 16px;
+}
+
+form.project-form h1 {
+    color: #0acee1;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+form.project-form label {
+    color: #000;
+    font-size: 20px;
+    display:block;
+    margin-bottom: 12px;
+}
+
+form.project-form.dark label {
+    color: #fff;
+}
+
+form.project-form input, form.project-form textarea {
+    padding: 8px 16px;
+    width: 100%;
+    resize: vertical;
+    font-size: 18px;
+}
+
+form.project-form input[type="color"] {
+    height: 50px;
+}
+
+form.project-form aside {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+form.project-form button {
+    padding: 8px 46px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+form.project-form button.save {
+    background-color: #0acee1;
+}
+
+form.project-form button.cancel {
+    background-color: crimson;
+}

@@ -1,0 +1,105 @@
+nav.app-nav {
+    min-height: calc(100vh - 51px);
+    /* background: #d1d1d1; */
+    /* background-color: #040D12; */
+    width: 250px;
+    flex-shrink: 0;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+nav.app-nav.dark {
+    background-color: #040D12;
+}
+
+nav.app-nav.light {
+    background-color: #6c5ff5;
+    /* border: 1px solid #ddd;
+    box-shadow: 3px 3px 15px #d1d1d1; */
+}
+
+nav.app-nav input {
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 17px;
+    margin: 8px 0px;
+}
+
+nav.app-nav button {
+    padding: 8px 16px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+nav.app-nav button.create {
+    background-color: #00B7C2;
+}
+
+nav.app-nav button.cancel {
+    background-color: crimson;
+}
+
+nav.app-nav ul {
+    list-style: none;
+}
+
+nav.app-nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+/* nav.app-nav ul li:hover {
+    background-color: hsl(186, 70%, 9%);
+} */
+
+
+nav.app-nav ul li span, nav.app-nav ul li button {
+    padding: 8px;
+
+}
+
+nav.app-nav ul li span {
+    display: inline-block;
+    flex-grow: 1;
+    /* background-color: hsl(186, 70%, 9%); */
+}
+
+nav.app-nav ul li.active span {
+    background-color: hsl(186, 70%, 9%);
+}
+
+nav.app-nav ul li span:hover {
+    background-color: hsl(186, 70%, 9%);
+}
+
+nav.app-nav ul li button.delete-icon {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: unset;
+    margin: 0;
+    flex-shrink: 0;
+    transition: 250ms all linear;
+}
+
+nav.app-nav ul li.active button.delete-icon {
+    color: crimson;
+    background-color: #fff;
+}
+
+nav.app-nav ul li button.delete-icon:hover {
+    color: #fff;
+    background-color: crimson;
+}

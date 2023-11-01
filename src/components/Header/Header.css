@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    /* background-color: #a1a1a1; */
+    width: 100%;
+}
+
+header.dark {
+    background-color: #040D12;
+    color: #fff;
+}
+
+header.light {
+    background-color: #6c5ff5;
+    color: #000;
+    /* border: 1px solid #ddd;
+    box-shadow: 3px 3px 15px #d1d1d1; */
+}

@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+div.toggler {
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+div.toggler span {
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 250ms linear;
+}
+
+
+div.toggler span:first-of-type {
+    color: yellow;
+}
+
+div.toggler span:last-of-type {
+    color: #fff;
+}
+
+div.toggler::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    height: calc(100% - 8px);
+    width: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    transition: all 250ms linear;
+}
+
+div.toggler.dark::before {
+    transform: translateX(36px)
+}
