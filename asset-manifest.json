@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kanban-react-app/static/css/main.c0e16229.css",
+    "main.js": "/kanban-react-app/static/js/main.667a1592.js",
+    "index.html": "/kanban-react-app/index.html",
+    "main.c0e16229.css.map": "/kanban-react-app/static/css/main.c0e16229.css.map",
+    "main.667a1592.js.map": "/kanban-react-app/static/js/main.667a1592.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0e16229.css",
+    "static/js/main.667a1592.js"
+  ]
+}
