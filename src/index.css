@@ -28,6 +28,8 @@ main.main.light {
 section.home {
     display: flex;
     width: 100%;
+    min-height: calc(100vh - 51px);
+    overflow-x: auto;
     align-items: center;
     gap: 20px;
     justify-content: center;
@@ -36,7 +38,7 @@ section.home {
 
 section.home p, section.home button {
     font-size: 24px;
-    
+    text-align: center;
 }
 
 section.home button {

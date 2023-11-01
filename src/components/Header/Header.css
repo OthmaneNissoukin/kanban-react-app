@@ -3,7 +3,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
-    /* background-color: #a1a1a1; */
     width: 100%;
 }
 
@@ -15,6 +14,29 @@ header.dark {
 header.light {
     background-color: #6c5ff5;
     color: #000;
-    /* border: 1px solid #ddd;
-    box-shadow: 3px 3px 15px #d1d1d1; */
 }
+
+header button {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 2px;
+    background: transparent;;
+    outline: none;
+    border: none;
+}
+
+header button span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+@media (min-width: 720px) {
+    header button {
+        display: none;
+    }
+}
+

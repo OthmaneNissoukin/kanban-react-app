@@ -1,10 +1,12 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect, useRef } from "react";
 import { BsPlus } from "react-icons/bs";
 import { BsTrash } from "react-icons/bs";
 import "./AppNav.css";
 import { KanbanContext } from "../../App.js";
 export default function AppNav() {
     const [projectTitleInput, setProjectTitleInput] = useState("");
+    const nav = useRef(null);
+    console.log(nav);
     const {
         setActiveProject,
         setNewTask,
@@ -14,7 +16,12 @@ export default function AppNav() {
         darkMode,
         createNewProject,
         activeProject,
+        showAppNav,
     } = useContext(KanbanContext);
+
+    useEffect(() => {
+        nav.current.classList.toggle("show");
+    }, [showAppNav]);
 
     function handleClick(projectName) {
         setActiveProject(projectName);
@@ -57,7 +64,7 @@ export default function AppNav() {
     }
 
     return (
-        <nav className={`app-nav ${darkMode ? "dark" : "light"}`}>
+        <nav ref={nav} className={`app-nav show ${darkMode ? "dark" : "light"}`}>
             {createNewProject ? (
                 <form onSubmit={(e) => e.preventDefault()}>
                     <input

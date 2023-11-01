@@ -19,6 +19,7 @@ function App() {
     const [titleInput, setTitleInput] = useState("");
     const [descriptionInput, setDescriptionInput] = useState("");
     const [labelInput, setLabelInput] = useState("#00e01a");
+    const [showAppNav, setShowAppNav] = useState(true);
     const [darkMode, setDarkMode] = useState(() =>
         window.localStorage.getItem("kanban_dark_mode")
             ? JSON.parse(window.localStorage.getItem("kanban_dark_mode"))
@@ -46,6 +47,8 @@ function App() {
                 setDescriptionInput,
                 labelInput,
                 setLabelInput,
+                showAppNav,
+                setShowAppNav,
             }}
         >
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
