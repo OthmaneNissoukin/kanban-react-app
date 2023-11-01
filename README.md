@@ -4,6 +4,8 @@ Simple Kanban application using Context API to manage states with local storage 
 
 You can add, update tasks delete tasks and also update their status by draging and drop inside other status columns.
 
+[View Demo](https://othmanenissoukin.github.io/kanban-react-app/)
+
 ## Run the app
 
 You can use `npm start` to run this app locally on `localhost:3000`
