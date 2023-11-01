@@ -1,8 +1,11 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
 import "./DarkModeToggle.css";
+import { useContext } from "react";
+import { KanbanContext } from "../../App";
 
-export default function DarkModeToggle({ width, height, darkMode, setDarkMode }) {
+export default function DarkModeToggle({ width, height }) {
+    const { darkMode, setDarkMode } = useContext(KanbanContext);
     function handleDarkMode() {
         setDarkMode(!darkMode);
         window.localStorage.setItem("kanban_dark_mode", JSON.stringify(!darkMode));

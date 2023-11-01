@@ -1,8 +1,15 @@
 form.project-form {
-    width: 50%;
+    width: 95%;
+    overflow-x: auto;
     padding: 16px 24px;
     margin: 0px auto;
     min-height: calc(100vh - 51px);
+}
+
+@media (min-width: 1024px) {
+    form.project-form {
+        width: 50%;
+    }
 }
 
 form.project-form div {

@@ -37,6 +37,7 @@ function App() {
                 createNewProject,
                 setCreateNewProject,
                 darkMode,
+                setDarkMode,
                 toCategory,
                 setToCategory,
                 toUpdate,
@@ -51,7 +52,7 @@ function App() {
                 setShowAppNav,
             }}
         >
-            <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+            <Header />
             <main className={`main ${darkMode ? "dark" : "light"}`}>
                 <AppNav />
                 {newTask ? <Form /> : activeProject ? <Tasks /> : <HomeScreen />}
